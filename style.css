@@ -576,20 +576,22 @@ section {
 
 /* ========== SKILLS SECTION ========== */
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2.5rem;
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
 }
 
 .skill-category {
+    flex: 0 0 320px; /* lebar tetap untuk tiap kategori */
+    scroll-snap-align: start;
     background: var(--card-bg);
-    padding: 2.5rem;
     border-radius: var(--border-radius);
+    padding: 1.5rem;
     box-shadow: var(--shadow);
-    transition: var(--transition);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    position: relative;
-    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .skill-category::before {
@@ -603,8 +605,17 @@ section {
 }
 
 .skill-category:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-hover);
+    transform: translateY(-5px);
+    /* box-shadow: var(--shadow-hover); */
+}
+
+/* scrollbar tampilan */
+.skills-grid::-webkit-scrollbar {
+  height: 10px;
+}
+.skills-grid::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
 }
 
 .category-header {
@@ -1443,7 +1454,8 @@ footer > .container > p {
 
 @media (max-width: 768px) {
   .certificates-grid::-webkit-scrollbar,
-  .projects-grid::-webkit-scrollbar {
+  .projects-grid::-webkit-scrollbar,
+  .skills-grid::-webkit-scrollbar {
     display: none;
   }
 }
