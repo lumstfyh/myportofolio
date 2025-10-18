@@ -455,6 +455,7 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    text-align: justify;
 }
 
 .about-header {
@@ -1366,6 +1367,11 @@ footer > .container > p {
         display: flex;
     }
 
+    .hero {
+        min-height: auto;
+        padding: 4rem 1rem 2rem;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -1402,12 +1408,12 @@ footer > .container > p {
         gap: 1rem;
     }
 
-    .skills-grid,
+    /* .skills-grid,
     .certificates-grid,
     .projects-grid {
         grid-template-columns: 1fr;
         scroll-behavior: smooth;
-    }
+    } */
 
     .section-title {
         font-size: 2.2rem;
@@ -1457,5 +1463,33 @@ footer > .container > p {
   .projects-grid::-webkit-scrollbar,
   .skills-grid::-webkit-scrollbar {
     display: none;
+  }
+}
+
+/* Pastikan tidak ada elemen yang meluap keluar layar */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+main, section {
+  overflow-x: hidden;
+}
+
+/* Fix umum untuk viewport mobile */
+@media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 1rem; /* biar pas di layar kecil */
   }
 }
