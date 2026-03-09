@@ -1,537 +1,365 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Mahasiswa Sistem Informasi</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lulu Mustafiyah — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span>MyPortfolio</span>
-            </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> Skills</a></li>
-                <li><a href="#certificates" class="nav-link"><i class="fas fa-award"></i> Certificates</a></li>
-                <li><a href="#projects" class="nav-link"><i class="fas fa-briefcase"></i> Projects</a></li>
-                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
-                <li><button class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i></button></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-bg-animation">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-            </div>
-        </div>
-        <div class="hero-content">
-            <div class="profile-container">
-                <div class="profile-frame">
-                    <img src="profile2.jpg" alt="Profile Picture" class="profile-img">
-                    <div class="profile-glow"></div>
-                </div>
-            </div>
-            <h1 class="hero-title">
-                <span class="title-main">Lulu Mustafiyah</span>
-                <span class="title-sub">Mahasiswa Sistem Informasi</span>
-            </h1>
-            <p class="subtitle">Web Developer Enthusiast & UI/UX Designer</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="cta-btn primary">
-                    <i class="fas fa-rocket"></i>
-                    View My Work
-                </a>
-                <a href="#contact" class="cta-btn secondary">
-                    <i class="fas fa-paper-plane"></i>
-                    Get In Touch
-                </a>
-            </div>
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <p>Scroll to explore</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">About Me</h2>
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <div class="about-header">
-                        <h3>Hello! I'm Lulu</h3>
-                        <div class="accent-line"></div>
-                    </div>
-                    <p>
-                        Saya adalah mahasiswa Sistem Informasi semester 6 yang memiliki passion dalam pengembangan web dan teknologi informasi. Saat ini saya sedang menempuh pendidikan di <strong>Universitas Teknologi Indonesia</strong> dengan fokus pada pengembangan sistem informasi modern.
-                    </p>
-                    <p>
-                        Saya memiliki ketertarikan khusus pada <strong>web development</strong>, <strong>analisis data</strong>, dan <strong>UI/UX design</strong>. Melalui berbagai proyek dan pembelajaran, saya terus mengasah kemampuan teknis dan soft skills untuk menjadi profesional IT yang kompeten.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <div class="stat-number">20+</div>
-                            <div class="stat-label">Projects Completed</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">3</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Happy Clients</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual" data-aos="fade-left">
-                    <div class="floating-card">
-                        <i class="fas fa-laptop-code"></i>
-                        <h4>Web Development</h4>
-                        <p>Modern & Responsive</p>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fas fa-palette"></i>
-                        <h4>UI/UX Design</h4>
-                        <p>User Centered</p>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h4>Mobile First</h4>
-                        <p>Responsive Design</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Programming</h3>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">HTML & CSS</span>
-                            <span class="skill-percent">90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">JavaScript</span>
-                            <span class="skill-percent">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">PHP</span>
-                            <span class="skill-percent">80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Python</span>
-                            <span class="skill-percent">75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="75" style="width: 0%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <div class="category-header">
-                        <i class="fas fa-database"></i>
-                        <h3>Database & Tools</h3>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">MySQL</span>
-                            <span class="skill-percent">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Git & GitHub</span>
-                            <span class="skill-percent">80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Figma</span>
-                            <span class="skill-percent">75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="75" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">VS Code</span>
-                            <span class="skill-percent">90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90" style="width: 0%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <div class="category-header">
-                        <i class="fas fa-users"></i>
-                        <h3>Soft Skills</h3>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Problem Solving</span>
-                            <span class="skill-percent">90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Teamwork</span>
-                            <span class="skill-percent">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Communication</span>
-                            <span class="skill-percent">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Time Management</span>
-                            <span class="skill-percent">80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80" style="width: 0%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates Section -->
-    <section id="certificates">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Certificates</h2>
-            <div class="certificates-grid">
-                <div class="certificate-card" data-aos="flip-left">
-                    <div class="certificate-header">
-                        <div class="certificate-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div class="certificate-badge">Premium</div>
-                    </div>
-                    <h3>Web Development Fundamental</h3>
-                    <p class="certificate-issuer">Dicoding Indonesia</p>
-                    <p class="certificate-year">2024</p>
-                    <div class="certificate-footer">
-                        <a href="#" class="view-certificate">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Certificate
-                        </a>
-                    </div>
-                </div>
-                <div class="certificate-card" data-aos="flip-left" data-aos-delay="100">
-                    <div class="certificate-header">
-                        <div class="certificate-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="certificate-badge">Advanced</div>
-                    </div>
-                    <h3>JavaScript Programming</h3>
-                    <p class="certificate-issuer">Progate</p>
-                    <p class="certificate-year">2024</p>
-                    <div class="certificate-footer">
-                        <a href="#" class="view-certificate">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Certificate
-                        </a>
-                    </div>
-                </div>
-                <div class="certificate-card" data-aos="flip-left" data-aos-delay="200">
-                    <div class="certificate-header">
-                        <div class="certificate-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="certificate-badge">Professional</div>
-                    </div>
-                    <h3>Database Management</h3>
-                    <p class="certificate-issuer">Coursera</p>
-                    <p class="certificate-year">2023</p>
-                    <div class="certificate-footer">
-                        <a href="#" class="view-certificate">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Certificate
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card" data-aos="zoom-in">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sistem Informasi Perpustakaan">
-                        <div class="project-overlay">
-                            <div class="project-tags">
-                                <span class="tag">HTML/CSS</span>
-                                <span class="tag">PHP</span>
-                                <span class="tag">MySQL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Sistem Informasi Perpustakaan</h3>
-                        <p>Sistem manajemen perpustakaan digital dengan fitur peminjaman, pengembalian, dan pencarian buku yang lengkap.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-btn primary">
-                                <i class="fas fa-eye"></i>
-                                Live Demo
-                            </a>
-                            <a href="#" class="project-btn secondary">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="E-Commerce Website">
-                        <div class="project-overlay">
-                            <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">MongoDB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>E-Commerce Website</h3>
-                        <p>Website toko online modern dengan fitur keranjang belanja, pembayaran, dan manajemen produk yang user-friendly.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-btn primary">
-                                <i class="fas fa-eye"></i>
-                                Live Demo
-                            </a>
-                            <a href="#" class="project-btn secondary">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Aplikasi Manajemen Tugas">
-                        <div class="project-overlay">
-                            <div class="project-tags">
-                                <span class="tag">Vue.js</span>
-                                <span class="tag">Firebase</span>
-                                <span class="tag">PWA</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Aplikasi Manajemen Tugas</h3>
-                        <p>Aplikasi web progresif untuk mengelola tugas harian dengan fitur reminder, prioritas, dan kolaborasi tim.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-btn primary">
-                                <i class="fas fa-eye"></i>
-                                Live Demo
-                            </a>
-                            <a href="#" class="project-btn secondary">
-                                <i class="fab fa-github"></i>
-                                Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
-            <div class="contact-container">
-                <div class="contact-info" data-aos="fade-right">
-                    <h3>Let's Work Together!</h3>
-                    <p>Saya selalu terbuka untuk peluang baru dan kolaborasi yang menarik. Mari terhubung dan ciptakan sesuatu yang luar biasa bersama!</p>
-                    
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Email</h4>
-                                <p>lulumustafiyah2650@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Phone</h4>
-                                <p>+62 815 4628 7753</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Location</h4>
-                                <p>Yogyakarta, Indonesia</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-section">
-                        <h4>Follow Me</h4>
-                        <div class="social-links">
-                            <a href="#" class="social-link">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form" data-aos="fade-left">
-                    <h3>Send Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                            <i class="fas fa-user form-icon"></i>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                            <i class="fas fa-envelope form-icon"></i>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                            <i class="fas fa-tag form-icon"></i>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                            <i class="fas fa-comment form-icon"></i>
-                        </div>
-                        <button type="submit" class="submit-btn">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span>Lulu Mustafiyah</span>
-                </div>
-                <p>Building amazing digital experiences with passion and creativity</p>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Lulu Mustafiyah. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <div class="nav__logo">Lumstfyh.</div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
     </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#home"         class="nav-link active">Home</a></li>
+      <li><a href="#about"        class="nav-link">About</a></li>
+      <li><a href="#skills"       class="nav-link">Skills</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#projects"     class="nav-link">Projects</a></li>
+      <li><a href="#contact"      class="nav-link">Contact</a></li>
+      <li class="nav__theme-li">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-    <!-- Success Message -->
-    <div class="success-message" id="successMessage">
-        <i class="fas fa-check-circle"></i>
-        <span>Pesan berhasil dikirim! Saya akan membalas segera.</span>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__bg"></div>
+  <div class="blob blob--1"></div>
+  <div class="blob blob--2"></div>
+  <div class="blob blob--3"></div>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="hero__greeting">Hello, I'm</p>
+      <h1 class="hero__name">Lulu Mustafiyah</h1>
+      <p class="hero__role"><span id="typedText"></span><span class="cursor"></span></p>
+      <p class="hero__desc">
+        Mahasiswa Sistem Informasi semester 6 yang passionate dalam membangun pengalaman digital yang modern, bersih, dan bermakna.
+      </p>
+      <div class="hero__btns">
+        <a href="#projects" class="btn btn--primary"><i class="fas fa-sparkles"></i> View Projects</a>
+        <a href="#contact"  class="btn btn--ghost"><i class="fas fa-paper-plane"></i> Contact Me</a>
+      </div>
     </div>
+    <div class="hero__visual">
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring-dots"></div>
+        <div class="avatar-fallback">LM</div>
+        <img src="profile.jpg" alt="Lulu Mustafiyah" class="avatar-img" onerror="this.style.display='none'" />
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="script.js"></script>
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section">
+    <p class="label reveal">About Me</p>
+    <div class="about__grid">
+      <div>
+        <h2 class="heading reveal" style="transition-delay:.05s">
+          Passionate builder of <em>digital experiences</em>
+        </h2>
+        <p class="subtext reveal" style="margin-top:1.2rem; transition-delay:.1s">
+          Saya adalah mahasiswa Sistem Informasi di <strong>Universitas Pembangunan "Veteran" Yogyakarta</strong> yang memiliki pengalaman pada project UI/UX design, web development, mobile development, dan analisis data. Saya ingin terus belajar dan berkembang untuk menjadi profesional IT yang kompeten dan berdampak.
+        </p>
+        <div class="about__stats stagger" style="margin-top:2rem">
+          <div class="stat-box"><div class="num">3+</div><div class="lbl">Projects</div></div>
+          <div class="stat-box"><div class="num">0</div><div class="lbl">Years Exp.</div></div>
+          <div class="stat-box"><div class="num">0</div><div class="lbl">Clients</div></div>
+        </div>
+      </div>
+      <div class="about__cards stagger">
+        <div class="about__card">
+          <div class="about__card-icon"><i class="fas fa-palette"></i></div>
+          <h4>UI/UX Design</h4>
+          <p>User-centered approach</p>
+        </div>
+        <div class="about__card">
+          <div class="about__card-icon"><i class="fas fa-code"></i></div>
+          <h4>Web Development</h4>
+          <p>Modern &amp; responsive interfaces</p>
+        </div>
+        <div class="about__card">
+          <div class="about__card-icon"><i class="fas fa-mobile-screen-button"></i></div>
+          <h4>Mobile Development</h4>
+          <p>Efficient and user-friendly apps</p>
+        </div>
+        <div class="about__card">
+          <div class="about__card-icon"><i class="fas fa-chart-line"></i></div>
+          <h4>Data Analysis</h4>
+          <p>Insight from data</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section">
+    <p class="label reveal">My Expertise</p>
+    <h2 class="heading reveal" style="transition-delay:.05s; margin-bottom:2.5rem">Skills &amp; Tools</h2>
+    <div class="skills__grid stagger">
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <div class="skill-card__icon"><i class="fas fa-code"></i></div>
+          <span class="skill-card__title">Programming</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>HTML &amp; CSS</span><span>90%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>JavaScript</span><span>70%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>PHP</span><span>80%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Python</span><span>70%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="70"></div></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <div class="skill-card__icon"><i class="fas fa-database"></i></div>
+          <span class="skill-card__title">Database &amp; Tools</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>MySQL</span><span>90%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Git &amp; GitHub</span><span>80%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Figma</span><span>80%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>VS Code</span><span>90%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="90"></div></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card__header">
+          <div class="skill-card__icon"><i class="fas fa-users"></i></div>
+          <span class="skill-card__title">Soft Skills</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Problem Solving</span><span>90%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Teamwork</span><span>80%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Communication</span><span>85%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Time Management</span><span>80%</span></div>
+          <div class="bar"><div class="bar__fill" data-w="80"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="section">
+    <p class="label reveal">Recognition</p>
+    <h2 class="heading reveal" style="transition-delay:.05s; margin-bottom:2.5rem">Certificates</h2>
+    <div class="certs__grid stagger">
+      <div class="cert-card">
+        <div class="cert-badge">Beginner</div>
+        <div class="cert-icon"><i class="fas fa-award"></i></div>
+        <h3>Flutter for Beginner</h3>
+        <p class="cert-issuer">Dicoding Indonesia</p>
+        <p class="cert-year">2025</p>
+        <a href="https://drive.google.com/file/d/1kKFsAm7mWCpwe06T4m0TjpJAIDpThiLr/view?usp=drive_link" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge">Beginner</div>
+        <div class="cert-icon"><i class="fas fa-award"></i></div>
+        <h3>Fundamental Project Management</h3>
+        <p class="cert-issuer">Digi Talent Scholarship</p>
+        <p class="cert-year">2025</p>
+        <a href="https://drive.google.com/file/d/1evnkE08Cnn3luMoQVEgPJkQ5hASryEmj/view?usp=drive_link" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="cert-card">
+        <div class="cert-badge">Beginner</div>
+        <div class="cert-icon"><i class="fas fa-award"></i></div>
+        <h3>Mini Course Data Analytics</h3>
+        <p class="cert-issuer">RevoU</p>
+        <p class="cert-year">2025</p>
+        <a href="https://drive.google.com/file/d/1kkIgJ0YcQ_P2bkD6nS9ZcxgGOyEZ1yaj/view?usp=drive_link" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section">
+    <p class="label reveal">My Work</p>
+    <h2 class="heading reveal" style="transition-delay:.05s; margin-bottom:2.5rem">Featured Projects</h2>
+    <div class="projects__grid stagger">
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <img src="https://plus.unsplash.com/premium_vector-1741411627674-d9cc5dc43d4a?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SnackScan" />
+          <div class="proj-overlay">
+            <div class="proj-tags">
+              <span class="proj-tag">Dart</span>
+              <span class="proj-tag">SQLite</span>
+              <span class="proj-tag">Flutter</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body">
+          <h3>Aplikasi Mobile Snackscan</h3>
+          <p>Snackscan adalah aplikasi mobile yang dapat menampilkan informasi nutrisi snack dengan memindai barcode produk.</p>
+          <a href="https://docs.google.com/document/d/1qx22PHIUOjoZasvUbZWt9AFm1Oeh8vG1ZjygEUQz5ZY/edit?usp=sharing" class="proj-link"><i class="fa-solid fa-eye"></i> See Project</a>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <img src="https://plus.unsplash.com/premium_vector-1737303315449-8a6e1517d86a?q=80&w=823&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sistem Informasi Laundry" />
+          <div class="proj-overlay">
+            <div class="proj-tags">
+              <span class="proj-tag">PHP</span>
+              <span class="proj-tag">MySQL</span>
+              <span class="proj-tag">HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body">
+          <h3>Sistem Informasi Laundry</h3>
+          <p>Website laundry online modern dengan fitur pemesanan layanan, manajemen internal, dan pengiriman yang user-friendly.</p>
+          <a href="https://github.com/lumstfyh/PROYEK-RBPL.git" class="proj-link"><i class="fa-solid fa-eye"></i> See Project</a>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <img src="https://plus.unsplash.com/premium_vector-1746455046185-1a0360d47307?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Divvy Project" />
+          <div class="proj-overlay">
+            <div class="proj-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Power BI</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body">
+          <h3>Analisis Data Layanan Divvy</h3>
+          <p>Analisis pola penggunaan dan prediksi permintaan layanan sistem bike-sharing divvy di Chicago.</p>
+          <a href="https://drive.google.com/file/d/12A5Hk1vvQKyzBoMZEtSjLzIkPm98-Q4l/view?usp=drive_link" class="proj-link"><i class="fa-solid fa-eye"></i> See Project</a>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <img src="https://plus.unsplash.com/premium_vector-1731080020347-db15eb116437?q=80&w=716&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sistem Informasi Akuntansi" />
+          <div class="proj-overlay">
+            <div class="proj-tags">
+              <span class="proj-tag">Figma</span>
+              <span class="proj-tag">Canva</span>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body">
+          <h3>Sistem Informasi Akuntansi</h3>
+          <p>Desain UI/UX aplikasi mobile untuk mengelola keuangan UMKM.</p>
+          <a href="https://drive.google.com/file/d/1zcdqoS87hKuP5L_V97aEaTYJQMVYiOEk/view?usp=sharing" class="proj-link"><i class="fa-solid fa-eye"></i> See Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section">
+    <p class="label reveal">Get In Touch</p>
+    <h2 class="heading reveal" style="transition-delay:.05s; margin-bottom:2.5rem">Let's <em>Connect</em></h2>
+    <div class="contact__grid">
+      <div class="contact__card reveal">
+        <h3>Hello there! 👋</h3>
+        <p>Saya selalu terbuka untuk peluang baru, kolaborasi, atau sekadar mengobrol tentang teknologi. Jangan ragu untuk menghubungi saya!</p>
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+          <div class="ci-info">
+            <h4>Email</h4>
+            <p>lulumustafiyah2650@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fas fa-phone"></i></div>
+          <div class="ci-info">
+            <h4>Phone</h4>
+            <p>+62 815 4628 7753</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="ci-info">
+            <h4>Location</h4>
+            <p>Yogyakarta, Indonesia</p>
+          </div>
+        </div>
+      </div>
+      <div class="social-card reveal" style="transition-delay:.1s">
+        <h4>Find Me On</h4>
+        <div class="social-grid">
+          <a href="https://www.linkedin.com/in/lulu-mustafiyah-ba2123282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/lumstfyh" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.instagram.com/lumstfyh_?igsh=bHM4OTlsdHZhZmZl" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
+          <!-- <a href="#" class="social-btn"><i class="fab fa-twitter"></i> Twitter</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2026 <a href="#home">|| Lulu Mustafiyah</a> 
+    <!-- Crafted with <span style="color:var(--accent)">&#9825;</span> in Yogyakarta. -->
+  </p>
+</footer>
+
+<button class="btt" id="btt" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
 </body>
 </html>
